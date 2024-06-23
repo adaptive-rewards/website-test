@@ -190,7 +190,7 @@
   </div>
 </section>
 
-
+<!-- 
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
@@ -246,7 +246,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <section class="section">
@@ -302,13 +302,13 @@
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
+          <h2 class="title is-3">Adaptability to New Environments (Bridge)</h2>
           <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
+            Using <i>adaptive rewards</i> you can create policies that generalise to specific environments better. Walking through a tunnel
+            would be impossible without our adaptive rewards framework since it would require conflicting rewards to the rest of the terrains in the environment (e.g. walking on stairs) which would make the policy unable to learn a generalisable policy.
           </p>
           <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
+            <source src="./static/videos/sim4.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -317,15 +317,14 @@
 
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">Adaptability to New Environments (Trench)</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+              We can also easily adjust to train for a radically different environment, such as a trench, by adaptively scaling reward weights, for example the weight for collision penalty and for foot target height.
             </p>
             <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
+              <source src="./static/videos/sim2.mp4"
                       type="video/mp4">
             </video>
           </div>
